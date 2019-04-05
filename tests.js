@@ -30,4 +30,28 @@ describe('sayHello', function() {
     it('should return "Hello, Pat!" when called with the argument "Pat"', function() {
         expect(sayHello('Pat')).toBe("Hello, Pat!");
     });
+    it('should expect sayHello() to return "Hello, World!', function() {
+        expect(sayHello()).toBe('Hello, World!');
+    });
+    it('should expect sayHello(true) to return "Hello, World!', function() {
+        expect(sayHello(true)).toBe('Hello, World!');
+    });
+    it('should expect sayHello(false) to return "Hello, World!', function() {
+        expect(sayHello(false)).toBe('Hello, World!');
+    });
+    it('should expect sayHello(null) to return "Hello, World!', function() {
+        expect(sayHello(null)).toBe('Hello, World!');
+    });
+    it('should expect sayHello(5) to return "Hello, World!', function() {
+        expect(sayHello(5)).toBe('Hello, World!');
+    });
+    it('should expect sayHello(2.3) to return "Hello, World!"', function() {
+        expect(sayHello(2.3)).toBe('Hello, World!')
+    });
+    it('should expect sayHello([]) to return "Hello, World!', function() {
+        expect(sayHello([])).toBe('Hello, World!');
+    });
+    it('should expect sayHello("5") to return "Hello, World!', function() {
+        expect(sayHello("5")).toBe('Hello, World!');
+    });
 });
