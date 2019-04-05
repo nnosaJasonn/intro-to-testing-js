@@ -51,7 +51,7 @@ describe('sayHello', function() {
     it('should expect sayHello([]) to return "Hello, World!', function() {
         expect(sayHello([])).toBe('Hello, World!');
     });
-    it('should expect sayHello("5") to return "Hello, World!', function() {
+    it('should expect sayHello("5") to return "Hello, World!"', function() {
         expect(sayHello("5")).toBe('Hello, World!');
     });
 });

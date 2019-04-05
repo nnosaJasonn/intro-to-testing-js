@@ -4,12 +4,14 @@ function helloWorld() {
 }
 
 function sayHello(input) {
-    var parseInput = parseFloat(input);
-    if (typeof input === 'string') {
+    if (!isNaN(parseFloat(input))) {
+        return "Hello, World!"
+    } else if (typeof input === 'string') {
         return 'Hello, ' + input + "!"
-    } else if (typeof parseInput === "number") {
-        return "Hello, World!";
+    } else {
+        return 'Hello, World!'
     }
-    return "Hello, World!";
+
 }
+
 
