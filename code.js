@@ -36,3 +36,40 @@ function isEven(input) {
         return false
     }
 }
+
+function isVowel (input) {
+    switch (input) {
+        case "a":
+            return true;
+        case "e":
+            return true;
+        case "i":
+            return true;
+        case 'o':
+            return true;
+        case "u":
+            return true;
+        case "A":
+            return true;
+        case "E":
+            return true;
+        case "I":
+            return true;
+        case 'O':
+            return true;
+        case "U":
+            return true;
+        default:
+            return false;
+    }
+}
+
+function add(a, b) {
+   var parseInput = parseInt(a) + parseInt(b)
+    if (isNaN(parseInput)) {
+        return 'NaN';
+    } else {
+        return parseInput;
+    }
+}
+
